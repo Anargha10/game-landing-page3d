@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Gaming</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+  <nav class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-sm z-50 border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <img src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3" 
+               alt="Cyberpunk Logo" 
+               class="h-12 w-auto mix-blend-screen [filter:drop-shadow(0_0_10px_rgba(255,0,128,0.5))_brightness(120%)_contrast(120%)]">
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-6">
+            <a href="#" class="tracking-tight text-gray-300 hover:text-cyan-400 hover:[text-shadow:0_0_15px_rgba(6,182,212,0.5)] px-3 py-2 rounded-md text-sm font-medium transition-all">Games</a>
+            <a href="#" class="tracking-tight text-gray-300 hover:text-cyan-400 hover:[text-shadow:0_0_15px_rgba(6,182,212,0.5)] px-3 py-2 rounded-md text-sm font-medium transition-all">Store</a>
+            <a href="#" class="tracking-tight text-gray-300 hover:text-cyan-400 hover:[text-shadow:0_0_15px_rgba(6,182,212,0.5)] px-3 py-2 rounded-md text-sm font-medium transition-all">Community</a>
+            <a href="#" class="tracking-tight text-gray-300 hover:text-cyan-400 hover:[text-shadow:0_0_15px_rgba(6,182,212,0.5)] px-3 py-2 rounded-md text-sm font-medium transition-all">News</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main w-full" data-scroll-container> 
+    <!-- Hero Section -->
+    <div class="w-full h-screen overflow-hidden relative">
+      <div class="absolute top-[35%] left-1/2 -translate-x-1/2 text-center z-20 p-8 rounded-2xl border border-none">
+        <h1 class="text-6xl font-bold text-white mb-4 [text-shadow:0_0_30px_rgba(6,182,212,0.8)] animate-pulse tracking-wider">Welcome to Cyberpunk</h1>
+        <p class="text-2xl text-cyan-300/90 [text-shadow:0_0_20px_rgba(6,182,212,0.6)] animate-pulse tracking-wide">Experience the future of gaming</p>
+      </div>
+      <div class="w-[600px] h-[600px] rounded-full bg-cyan-500 blur-[100px] opacity-60 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[5] animate-pulse"></div>
+      <img class="absolute z-[50] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-screen [filter:drop-shadow(0_0_30px_rgba(255,0,128,0.6))_brightness(120%)_contrast(120%)]" 
+           src="https://i.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1920&format=png&auto=webp&s=f42dbd8f5c04aedb9ba9291c1ba4d679029cc1f3" 
+           alt="">
+      <canvas id="canvas" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10" style="cursor: grab; cursor: -webkit-grab;"></canvas>
+    </div>
+
+    <!-- Features Section -->
+    <section class="relative py-20 bg-gradient-to-b from-black via-zinc-900 to-black">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl font-bold text-cyan-400 mb-4 [text-shadow:0_0_20px_rgba(6,182,212,0.6)]">Featured Content</h2>
+          <p class="text-gray-400">Discover our latest releases and upcoming titles</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature Card 1 -->
+          <div class="bg-zinc-900/50 backdrop-blur-sm p-6 rounded-xl border border-zinc-800 hover:border-cyan-500 transition-all group">
+            <div class="h-48 rounded-lg overflow-hidden mb-4">
+              <img src="https://media.istockphoto.com/id/1392408918/video/cybersecurity-cyberwar-concept-energy-flows-from-protected-server.jpg?s=640x640&k=20&c=UDb4wM0WP8DCBBzWYPrJPNXPr5TQxG_6DHyAj9rAfUY=" alt="Game Preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Cybernetic Warfare</h3>
+            <p class="text-gray-400">Experience intense combat with advanced cybernetic enhancements</p>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="bg-zinc-900/50 backdrop-blur-sm p-6 rounded-xl border border-zinc-800 hover:border-cyan-500 transition-all group">
+            <div class="h-48 rounded-lg overflow-hidden mb-4">
+              <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/02/cnn_scratch_math.png" alt="Game Preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Neural Networks</h3>
+            <p class="text-gray-400">Dive into the digital realm with mind-bending adventures</p>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="bg-zinc-900/50 backdrop-blur-sm p-6 rounded-xl border border-zinc-800 hover:border-cyan-500 transition-all group">
+            <div class="h-48 rounded-lg overflow-hidden mb-4">
+              <img src="https://imaginear.com/sites/default/files/images/arplatform/imagine_ar_mockup.png" alt="Game Preview" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <h3 class="text-xl font-semibold text-cyan-400 mb-2">Augmented Reality</h3>
+            <p class="text-gray-400">Blend the physical and digital worlds in stunning detail</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="relative py-20 bg-black">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-cyan-400 mb-4 [text-shadow:0_0_20px_rgba(6,182,212,0.6)]">Join the Revolution</h2>
+        <p class="text-gray-400 mb-8">Subscribe to our newsletter for exclusive updates and cyber-enhanced content</p>
+        <form class="flex flex-col sm:flex-row gap-4 justify-center">
+          <input type="email" placeholder="Enter your email" class="px-6 py-3 bg-zinc-900/50 border border-zinc-800 rounded-lg focus:border-cyan-500 focus:outline-none text-white">
+          <button class="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg transition-colors [text-shadow:0_0_10px_rgba(6,182,212,0.6)]">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900/50 border-t border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-cyan-400 font-semibold mb-4">About Us</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Company</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Careers</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Press</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-cyan-400 font-semibold mb-4">Support</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Help Center</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-cyan-400 font-semibold mb-4">Legal</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Privacy</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Terms</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Licenses</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-cyan-400 font-semibold mb-4">Social</h3>
+            <ul class="text-gray-400 space-y-2">
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Twitter</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">Discord</a></li>
+              <li><a href="#" class="hover:text-cyan-400 transition-colors">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-zinc-800 text-center text-gray-400">
+          <p>&copy; 2023 Cyberpunk Gaming. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script type="module" src="main.js"></script>
+</body>
+</html>
