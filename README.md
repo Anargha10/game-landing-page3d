@@ -1,6 +1,6 @@
 A futuristic 3D landing page featuring a **customizable 3D helmet** with smooth animations, built with Three.js, GLSL shaders, and GSAP. Perfect for showcasing game assets or tech projects!
 
-👉 [**Live Demo**](https://anargha10.github.io/game-landing-page3d/) 
+👉 ![Image](https://github.com/user-attachments/assets/674120ef-504f-4ffa-816b-bdfb059be5e6)
 
 ---
 
